@@ -1,0 +1,63 @@
+<div id="frmContainer" class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
+  <div class="row">
+    <h3>Agent Login</h3>
+    <hr />
+  </div>
+  <div class="row">
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="row">
+          <div class="form-group innerFormText">
+            <label>Email Address</label>
+            <input for="email"
+              type="email"
+              id="email"
+              class="form-control"
+              name="email"
+              placeholder="Email Address"
+              tabindex="1"
+              ngModel
+              required
+              pattern = "^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group innerFormText">
+            <label>Password</label>
+            <input for="password" type="password" id="password"
+              class="form-control"
+              name="password"
+              placeholder="Password"
+              ngModel
+              required
+              tabindex="2"
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary btn-lg btn-block" value="Log In" id="form-submit" tabindex="4">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group displayInline innerFormText">
+            <div class="col-md-6">
+              <a href="#" id="forgotPasswordUrl" class="innerFormText">Forgot password?</a>
+            </div>
+            <div class="col-md-6">
+              <div class="keepSignedIn checkbox-inline">
+                <label for="rememberMe">
+                  <input id="rememberMe"
+                         name="rememberMe"
+                         tabindex="3"
+                         type="checkbox"
+                         value="false"
+                         ngModel> Keep me signed in
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+  </div>
+</div>

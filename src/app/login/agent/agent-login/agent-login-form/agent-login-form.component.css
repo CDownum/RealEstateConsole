@@ -1,0 +1,12 @@
+.innerFormText{
+  text-align: left;
+}
+
+.keepSignedIn {
+  float: right;
+  font-weight: normal;
+}
+
+.displayInline {
+  display: inline;
+}
