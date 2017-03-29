@@ -1,12 +1,15 @@
-<div id="frmContainer" class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
+<div id="frmContainer" class="col-lg-9 col-md-8 col-sm-11 col-xs-12 login-form">
   <div class="row">
     <h3>Agent Login</h3>
-    <hr />
+    <div>
+      <hr class="hr-sep">
+    </div>
   </div>
   <div class="row">
       <form (ngSubmit)="onSubmit(f)" #f="ngForm">
         <div class="row">
           <div class="form-group innerFormText">
+            <div class="col-lg-10 col-md-9 col-sm-11 col-xs-12 col-lg-offset-1 col-md-offset-1">
             <label>Email Address</label>
             <input for="email"
               type="email"
@@ -19,10 +22,12 @@
               required
               pattern = "^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
             >
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="form-group innerFormText">
+            <div class="col-lg-10 col-md-9 col-sm-11 col-xs-12 col-lg-offset-1 col-md-offset-1">
             <label>Password</label>
             <input for="password" type="password" id="password"
               class="form-control"
@@ -32,20 +37,21 @@
               required
               tabindex="2"
             >
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="form-group">
-            <input type="submit" class="btn btn-primary btn-lg btn-block" value="Log In" id="form-submit" tabindex="4">
+          <div class="col-lg-10 col-md-9 col-sm-11 col-xs-12 col-lg-offset-1 col-md-offset-1">
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary btn-lg btn-block" value="Log In" id="form-submit" tabindex="4">
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="form-group displayInline innerFormText">
-            <div class="col-md-6">
+            <div class="col-lg-10 col-md-9 col-sm-11 col-xs-12 col-lg-offset-1 col-md-offset-1">
               <a href="#" id="forgotPasswordUrl" class="innerFormText">Forgot password?</a>
-            </div>
-            <div class="col-md-6">
-              <div class="keepSignedIn checkbox-inline">
+              <div class="keepSignedIn">
                 <label for="rememberMe">
                   <input id="rememberMe"
                          name="rememberMe"

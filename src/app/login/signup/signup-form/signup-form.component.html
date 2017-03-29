@@ -1,0 +1,89 @@
+<div id="frmContainer" class="col-lg-9 col-md-8 col-sm-11 col-xs-12 login-form">
+  <div class="row">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <div class="row">
+        <div class="form-group innerFormText">
+          <div class="col-lg-10 col-md-9 col-sm-11 col-xs-12 col-lg-offset-1 col-md-offset-1">
+            <input for="firstName"
+                   id="firstName"
+                   class="form-control"
+                   name="firstName"
+                   placeholder="First Name"
+                   tabindex="1"
+                   ngModel
+                   required>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group innerFormText">
+          <div class="col-lg-10 col-md-9 col-sm-11 col-xs-12 col-lg-offset-1 col-md-offset-1">
+            <input for="lastName"
+                   id="lastName"
+                   class="form-control"
+                   name="lastName"
+                   placeholder="Last Name"
+                   tabindex="2"
+                   ngModel
+                   required>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group innerFormText">
+          <div class="col-lg-10 col-md-9 col-sm-11 col-xs-12 col-lg-offset-1 col-md-offset-1">
+            <input for="email"
+                   type="email"
+                   id="email"
+                   class="form-control"
+                   name="email"
+                   placeholder="Email Address"
+                   tabindex="3"
+                   ngModel
+                   required
+                   pattern = "^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group innerFormText">
+          <div class="col-lg-10 col-md-9 col-sm-11 col-xs-12 col-lg-offset-1 col-md-offset-1">
+            <input for="password" type="password" id="password"
+                   class="form-control"
+                   name="password"
+                   placeholder="Password"
+                   ngModel
+                   required
+                   tabindex="4">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-md-9 col-sm-11 col-xs-12 col-lg-offset-1 col-md-offset-1">
+          <div class="form-group" >
+            <input type="submit" class="btn btn-warning btn-lg btn-block loginBtn" value="Sign Me Up" id="form-submit" tabindex="4">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <hr class="hr-sep">
+        </div>
+      </div>
+      <div class="social-buttons">
+        <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+        <a href="#" class="btn btn-google"><i class="fa fa-google"></i> Google</a>
+      </div>
+      <div class="row subscript">
+        <div>
+          We don't post anything without your permission.
+        </div>
+      </div>
+      <div class="row subscript">
+        <div>
+          By creating an account you are accepting our Terms and Conditions and Privacy Policy.
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

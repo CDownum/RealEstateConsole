@@ -1,0 +1,26 @@
+.navbar {
+  margin-bottom: 0px;
+  background-color: #2e353d;;
+  color: #e1ffff;
+}
+
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.logo-img {
+  height: 50px;
+  width: 50px;
+}
+
+.brandName {
+ Display: Inline;
+ font-size: 12pt;
+}
+
+.container-fluid {
+  margin: 0px;
+  padding: 2px;
+}
